@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title>Tick Tack To</title>
+		<link rel="icon" href="./image/tic-tac-toe.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="style.css"></li>
+	</head>
+	<body>
+		<div class="wrapper fadeInDown">
+			<div id="formContent" style="display: none;">
+				<form>
+					<input type="text" id="name" class="fadeIn second" name="name" placeholder="Nick Name">
+					<input type="button" class="fadeIn fourth" value="Join" onclick="joinGame()">
+				</form>
+			</div>
+			<div id=formContentGames style="display: none;">
+				<h3>Players Available </h3>
+				<ul id="game-list"></ul>
+				<h2 id="invitaion"></h2>
+			</div>
+			<div id="game-board" style="display: none;">
+				<h3 id="game-palyers"></h3>
+				<table class="move" cellspacing="0" id="board" id="game-table">
+					<tr>
+						<td id="value0" onclick="press(0)">
+			
+						</td>
+						<td id="value1" onclick="press(1)">
+			
+						</td>
+						<td id="value2" onclick="press(2)">
+			
+						</td>
+					</tr>
+					<tr>
+						<td id="value3" onclick="press(3)">
+			
+						</td>
+						<td id="value4" onclick="press(4)">
+			
+						</td>
+						<td id="value5" onclick="press(5)">
+			
+						</td>
+					</tr>
+					<tr>
+						<td id="value6" onclick="press(6)">
+			
+						</td>
+						<td id="value7" onclick="press(7)">
+			
+						</td>
+						<td id="value8" onclick="press(8)">
+			
+						</td>
+					</tr>
+				</table>
+				<h3 id="move"></h3>
+				<h2 id="winner"></h2>
+			</div>
+		</div>
+		
+		
+		<script src="jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="https://tick-tack-to.herokuapp.com/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
